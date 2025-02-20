@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="whatsapp/whatsapp.css">
+    <!-- Title -->
+    <title>LedgerTree</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive/responsive.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="loader">
+            <span class="inner1"></span>
+            <span class="inner2"></span>
+            <span class="inner3"></span>
+        </div>
+    </div>
+  <!-- Div to load the chat widget -->
+  <div id="chat-widget-container">
+    <!-- Import chat widget HTML -->
+  </div>
+    <!-- Search Form Area -->
+    <div class="fancy-search-form d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Close Btn -->
+                    <div class="search-close-btn" id="closeBtn">
+                        <i class="ti-close" aria-hidden="true"></i>
+                    </div>
+                    <!-- Form -->
+                    <form action="#" method="get">
+                        <input type="search" name="fancySearch" id="search" placeholder="| Enter Your Search...">
+                        <input type="submit" class="d-none" value="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="whatsapp-container"></div>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header_area" id="header">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <div class="col-12 h-100">
+                    <nav class="h-100 navbar navbar-expand-lg align-items-center">
+                        <a class="navbar-brand" href="index.html">LedgerTree Financial Group</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fancyNav" aria-controls="fancyNav" aria-expanded="false" aria-label="Toggle navigation"><span class="ti-menu"></span></button>
+                        <div class="collapse navbar-collapse" id="fancyNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <!-- <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="index.html">Home</a>
+                                        <a class="dropdown-item" href="static-page.html">Static Page</a>
+                                        <a class="dropdown-item" href="contact.html">Contact</a>
+                                    </div>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about-us-section">About</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" href="static-page.html">Blog</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#services-section">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <!-- Search & Shop Btn Area -->
+                            <!-- <div class="fancy-search-and-shop-area">
+                                <a id="search-btn" href="#"><i class="icon_search" aria-hidden="true"></i></a>
+                                <a id="shop-btn" href="#"><i class="icon_bag_alt" aria-hidden="true"></i></a>
+                            </div> -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Hero Area Start ***** -->
+    <div class="fancy-hero-area bg-img bg-overlay animated-img" style="background-image: url(img/bg-img/hero-1.jpg);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="fancy-hero-content text-center">
+                        <!-- Video Overview -->
+                        <div class="video-overview">
+                            <a href="https://www.youtube.com/watch?v=uceuyjYrOuY" class="video--play--btn"><i class="fa fa-play" aria-hidden="true"></i> Watch The Overview</a>
+                        </div>
+                        <h2>Give us a call or send an email, and let’s discuss how we can help!</h2>
+                        <a href="#about-us-section" class="btn fancy-btn ">About Us</a>
+                        <a id="calander-container"></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Hero Area End ***** -->
+    <!-- ***** Top Feature Area Start ***** -->
+    <div class="fancy-top-features-area bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="fancy-top-features-content">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-4">
+                                <div class="single-top-feature">
+                                    <h5><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Reliability</h5>
+                                    <p>At LedgerTree Financial Group, our expertise lies in delivering customized financial solutions that fuel business growth. From detailed financial analysis to strategic planning, we ensure your decisions are supported by insightful data.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="single-top-feature">
+                                    <h5><i class="fa fa-clock-o" aria-hidden="true"></i> Expertise</h5>
+                                    <p>Our reliability is grounded in providing accurate financial solutions that promote business growth. From comprehensive financial reporting to strategic advisory, we ensure your decisions are backed by trustworthy data. </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="single-top-feature">
+                                    <h5><i class="fa fa-diamond" aria-hidden="true"></i> Quality</h5>
+                                    <p>At LedgerTree Financial Group, our quality is evident in offering exceptional financial solutions that drive business growth. From precise financial reporting to strategic planning, we ensure your decisions are guided by high-quality data. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Top Feature Area End ***** -->
+
+    <!-- ***** About Us Area Start ***** -->
+    <section id="about-us-section" class="fancy-about-us-area bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="about-us-text">
+                        <h2>We Are A Trusted Financial Partner Committed to Helping Your Business Thrive</h2>
+<p>Our team at LedgerTree Financial Group is dedicated to providing innovative financial solutions tailored to your needs. We focus on driving growth, improving financial efficiency, and ensuring long-term success for your business.</p>
+<p>We take pride in delivering accurate, reliable, and high-quality financial services that empower you to make informed decisions with confidence. Trust us to guide you through every step of your financial journey.</p>
+
+                        <a href="#" class="btn fancy-btn fancy-dark">Read More</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 col-xl-5 ml-xl-auto">
+                    <div class="about-us-thumb wow fadeInUp" data-wow-delay="0.5s">
+                        <img src="img/bg-img/about-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** About Us Area End ***** -->
+
+    <!-- ***** Skills Area Start ***** -->
+    <section class="fancy-skills-area section-padding-200">
+        <!-- Side Thumb -->
+        <div class="skills-side-thumb">
+            <img src="img/bg-img/skills.png" alt="">
+        </div>
+        <!-- Skills Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-5 ml-auto">
+                    <div class="section-heading">
+                        <h2>We Serve All Industries</h2>
+                        <p>At LedgerTree Financial Group, we specialize in providing expert financial solutions tailored to your industry’s needs. Our success is defined by the results we help our clients achieve.</p>
+                    </div>
+                    <div class="skills-content">
+                        <!-- Single Progress Bar -->
+                        <div class="single_progress_bar wow fadeInUp" data-wow-delay="0.5s">
+                            <h6>Bookkeeping & Financial Management</h6>
+                            <div id="bar1" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="100"></span>
+                            </div>
+                        </div>
+                        <!-- Single Progress Bar -->
+                        <div class="single_progress_bar wow fadeInUp" data-wow-delay="1s">
+                            <h6>Tax Filing & Strategy</h6>
+                            <div id="bar2" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="99"></span>
+                            </div>
+                        </div>
+                        <!-- Single Progress Bar -->
+                        <div class="single_progress_bar wow fadeInUp" data-wow-delay="1.5s">
+                            <h6>Financial Planning & Analysis</h6>
+                            <div id="bar3" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="98"></span>
+                            </div>
+                        </div>
+                        <!-- Single Progress Bar -->
+                        <div class="single_progress_bar wow fadeInUp" data-wow-delay="2s">
+                            <h6>Business Valuations & M&A Advisory</h6>
+                            <div id="bar4" class="barfiller">
+                                <div class="tipWrap">
+                                    <span class="tip"></span>
+                                </div>
+                                <span class="fill" data-percentage="97"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn fancy-btn fancy-dark">Work with us</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- ***** Service Area Start ***** -->
+    <section id="services-section"class="fancy-services-area bg-img bg-overlay section-padding-100-70" style="background-image: url(img/bg-img/hero-2.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading heading-white text-center">
+                        <h2>Our Services</h2>
+                        <p>At LedgerTree Financial Group, we offer a wide range of expert financial solutions to help your business grow and succeed.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Single Service -->
+                <div class="col-12 col-md-4">
+                    <div class="single-service-area text-center wow fadeInUp" data-wow-delay="0.5s">
+                        <i class="ti-ruler-pencil"></i>
+                        <h5>Bookkeeping & Financial Management</h5>
+                        <p>We handle bookkeeping, accounts receivable, and accounts payable to keep your financial records in order and help you track performance.</p>
+                    </div>
+                </div>
+                <!-- Single Service -->
+                <div class="col-12 col-md-4">
+                    <div class="single-service-area text-center wow fadeInUp" data-wow-delay="1s">
+                        <i class="ti-desktop"></i>
+                        <h5>Tax Filing & Strategy</h5>
+                        <p>We provide tax filing, strategic planning, and entity structure services, ensuring your business stays compliant while optimizing tax efficiency.</p>
+                    </div>
+                </div>
+                <!-- Single Service -->
+                <div class="col-12 col-md-4">
+                    <div class="single-service-area text-center wow fadeInUp" data-wow-delay="1.5s">
+                        <i class="ti-announcement"></i>
+                        <h5>Payroll Administration</h5>
+                        <p>We manage payroll administration to ensure your employees are paid on time and in compliance with local regulations.</p>
+                    </div>
+                </div>
+                <!-- Single Service -->
+                <div class="col-12 col-md-4">
+                    <div class="single-service-area text-center wow fadeInUp" data-wow-delay="2s">
+                        <i class="ti-bar-chart"></i>
+                        <h5>FP&A (Financial Planning & Analysis)</h5>
+                        <p>We assist with budgeting, forecasting, financial analysis, and reporting to help you make data-driven decisions for your business.</p>
+                    </div>
+                </div>
+                <!-- Single Service -->
+                <div class="col-12 col-md-4">
+                    <div class="single-service-area text-center wow fadeInUp" data-wow-delay="2.5s">
+                        <i class="ti-pie-chart"></i>
+                        <h5>Business Planning & Strategy</h5>
+                        <p>We help you develop effective business strategies to ensure sustainable growth, from long-term planning to operational improvements.</p>
+                    </div>
+                </div>
+                <!-- Single Service -->
+                <div class="col-12 col-md-4">
+                    <div class="single-service-area text-center wow fadeInUp" data-wow-delay="3s">
+                        <i class="ti-signal"></i>
+                        <h5>M&A Advisory</h5>
+                        <p>We offer Mergers & Acquisitions advisory services to guide you through strategic acquisitions or divestitures for business expansion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- ***** Service Area End ***** -->
+
+    <!-- ***** Testimonials Area Start ***** -->
+    <section class="fancy-testimonials-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="testimonials-slides owl-carousel">
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial d-md-flex align-items-center">
+                            <!-- Testimonial Thumb -->
+                            <div class="testimonial-thumbnail">
+                                <img src="img/clients-img/1.jpg" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div class="testimonilas-content">
+                                <span class="playfair-font quote">“</span>
+                                <h5>I wanted to mention that these days, when the opposite of good customer and tech support tends to be the norm, it’s always great having a team like you guys at Fancy! So, be sure that I’ll always spread the word about how good your product is and the extraordinary level of support that you provide any time there is any need for it.</h5>
+                                <h6>Aigars Silkalns - <span>CEO DeerCreative</span></h6>
+                            </div>
+                        </div>
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial d-md-flex align-items-center">
+                            <!-- Testimonial Thumb -->
+                            <div class="testimonial-thumbnail">
+                                <img src="img/clients-img/1.jpg" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div class="testimonilas-content">
+                                <span class="playfair-font quote">“</span>
+                                <h5>I wanted to mention that these days, when the opposite of good customer and tech support tends to be the norm, it’s always great having a team like you guys at Fancy! So, be sure that I’ll always spread the word about how good your product is and the extraordinary level of support that you provide any time there is any need for it.</h5>
+                                <h6>Aigars Silkalns - <span>CEO DeerCreative</span></h6>
+                            </div>
+                        </div>
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial d-md-flex align-items-center">
+                            <!-- Testimonial Thumb -->
+                            <div class="testimonial-thumbnail">
+                                <img src="img/clients-img/1.jpg" alt="">
+                            </div>
+                            <!-- Content -->
+                            <div class="testimonilas-content">
+                                <span class="playfair-font quote">“</span>
+                                <h5>I wanted to mention that these days, when the opposite of good customer and tech support tends to be the norm, it’s always great having a team like you guys at Fancy! So, be sure that I’ll always spread the word about how good your product is and the extraordinary level of support that you provide any time there is any need for it.</h5>
+                                <h6>Aigars Silkalns - <span>CEO DeerCreative</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Testimonials Area End ***** -->
+
+    <!-- ***** CTA Area Start ***** -->
+    <section class="fancy-cta-area bg-img bg-overlay section-padding-100" style="background-image: url(img/bg-img/hero-3.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="cta-content text-center">
+                        <h2>Ready To Discuss Your Project?</h2>
+                        <p>There are many ways to contact us. You may drop us a line, give us a call or send an email, choose what suits you the most.</p>
+                        <a href="#" class="btn fancy-btn">Work with us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** CTA Area End ***** -->
+
+    <!-- ***** Blog Area Start ***** -->
+    <section class="fancy-blog-area section-padding-100-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Our Industries</h2>
+                        <p>We are trusted by top companies to deliver exceptional financial services and insights.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Single Service -->
+                <div class="col-12 col-md-4">
+                    <div class="single-blog-area wow fadeInUp" data-wow-delay="0.5s">
+                        <img src="img/blog-img/blog-1.jpg" alt="Service 1">
+                        <div class="blog-content">
+                            <h5><a href="static-page.html">Book keeping & Accounts</a></h5>
+                            <p>We offer comprehensive bookkeeping services, including accounts receivable and accounts payable management, to ensure smooth operations for businesses.</p>
+                            <a href="">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Service -->
+                <div class="col-12 col-md-4">
+                    <div class="single-blog-area wow fadeInUp" data-wow-delay="1s">
+                        <img src="img/blog-img/blog-2.jpg" alt="Service 2">
+                        <div class="blog-content">
+                            <h5><a href="">Payroll Administration</a></h5>
+                            <p>Our payroll services help businesses ensure timely and accurate processing of employee salaries, taxes, and benefits.</p>
+                            <a href="">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Service -->
+                <div class="col-12 col-md-4">
+                    <div class="single-blog-area wow fadeInUp" data-wow-delay="1.5s">
+                        <img src="img/blog-img/blog-3.jpg" alt="Service 3">
+                        <div class="blog-content">
+                            <h5><a href="static-page.html">Financial Planning & Analysis</a></h5>
+                            <p>We provide expert financial planning and analysis services to help businesses achieve sustainable growth and profitability.</p>
+                            <a href="">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ***** Blog Area End ***** -->
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="fancy-footer-area fancy-bg-dark">
+        <div class="footer-content section-padding-80-50">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Widget -->
+                    <!-- <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h6>Our Newsletter</h6>
+                            <p>Subscribe to our mailing list to get updates directly to your inbox.</p>
+                            <form action="#" method="get">
+                                <input type="search" name="search" id="footer-search" placeholder="E-mail">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                            <div class="footer-social-widegt d-flex align-items-center">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- Footer Widget -->
+                    <!-- <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h6>Twitter Feed</h6>
+                            <div class="single-tweet">
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> With the popularity of podcast shows growing with each year, you might consider starting it yourself as well. <br>https://buff.ly/2zttoJb </a>
+                                <span>About 20 hours ago</span>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- Footer Widget (Increased Size for Services) -->
+                    <div class="col-12 col-sm-6 col-lg-8"> <!-- Increased column width to 6 -->
+                        <div class="single-footer-widget">
+                            <h6 class="footer-widget-title">Our Services</h6> <!-- Title with more emphasis -->
+                            <nav>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Bookkeeping/Accounts Receivable/Accounts Payable</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Tax Filing & Planning</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Payroll Administration</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Financial Planning & Analysis (FP&A)</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Business Planning & Strategy</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i> M&A (Mergers & Acquisitions) Advisory</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <h6>Contact Us</h6>
+                            <p>1 (800) 686-6688 <br>info.deercreative@gmail.com</p>
+                            <p>40 Baria Sreet 133/2 <br>New York City, US</p>
+                            <p>Open hours: 8:00 AM - 6:00 PM (Mon-Fri)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Copywrite -->
+        <div class="footer-copywrite-area">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="copywrite-content h-100 d-flex align-items-center justify-content-between">
+                            <!-- Copywrite Text -->
+                            <div class="copywrite-text">
+                                <p>&copy; 2025 LedgerTree Financial Group. All Rights Reserved.</p>
+                            </div>
+                            <!-- Footer Nav -->
+                            <div class="footer-nav">
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Disclaimer</a></li>
+                                        <li><a href="#">Privacy</a></li>
+                                        <li><a href="#">Contact us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap-4 js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/others/plugins.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+</body>
+<script src="whatsapp/whatsapp.js"></script>
+<script>
+    // Load the WhatsApp widget HTML
+    fetch('whatsapp/whatsapp.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('whatsapp-container').innerHTML = html;
+        });
+</script>
+<script>
+    // Load the WhatsApp widget HTML
+    fetch('calanderly/calander.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('calander-container').innerHTML = html;
+        });
+</script>
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
