@@ -402,7 +402,7 @@ html {
     height: 100px;
     top: 0;
     left: 0;
-    padding: 0 60px;
+    padding: 0 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
@@ -421,7 +421,7 @@ html {
 .header_area .navbar-brand {
     padding: 0;
     margin-right: 0;
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
     font-weight: 700;
 }
@@ -625,6 +625,7 @@ html {
 .about-us-text > h2 {
     font-size: 38px;
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .about-us-text > p {
@@ -637,6 +638,7 @@ html {
 
 .about-us-thumb > img {
     border-radius: 5px;
+    margin-top: 65px;
 }
 
 /* Skills Area CSS */
@@ -1246,4 +1248,15 @@ html {
 
 .toast.error {
     background: #f44336;
+}
+.skills-side-thumb img {
+    width: 80%; /* Reduce size for a better thumbnail effect */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Smoother edges */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth effect */
+}
+
+.skills-side-thumb img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
 }
